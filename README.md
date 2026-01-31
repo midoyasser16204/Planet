@@ -74,21 +74,48 @@ This project was developed collaboratively by:
 
 <table>
 <tr>
-<td align="center"><b>Login</b><br><br><img src="images/login.png" width="260"/></td>
-<td align="center"><b>Register</b><br><br><img src="images/register.png" width="250"/></td>
-<td align="center"><b>Send Code</b><br><br><img src="images/send code.png" width="260"/></td>
-<td align="center"><b>Verify Code</b><br><br><img src="images/verify code.png" width="260"/></td>
-<td align="center"><b>Reset Password</b><br><br><img src="images/reset password.png" width="240"/></td>
-  
+<td align="center">
+  <b>Login</b><br><br>
+  <img src="images/login.png" height="480" style="max-width:100%; object-fit:contain;" />
+</td>
+
+<td align="center">
+  <b>Register</b><br><br>
+  <img src="images/register.png" height="480" style="max-width:100%; object-fit:contain;" />
+</td>
+
+<td align="center">
+  <b>Send Code</b><br><br>
+  <img src="images/send code.png" height="480" style="max-width:100%; object-fit:contain;" />
+</td>
+
+<td align="center">
+  <b>Verify Code</b><br><br>
+  <img src="images/verify code.png" height="480" style="max-width:100%; object-fit:contain;" />
+</td>
+
+<td align="center">
+  <b>Reset Password</b><br><br>
+  <img src="images/reset password.png" height="480" style="max-width:100%; object-fit:contain;" />
+</td>
+
 </tr>
 </table>
 
 ---
-
+###  Location Access
 <table>
 <tr>
 
-<td align="center"><b>Get Location</b><br><br><img src="images/get location.png" width="250"/></td>
+<td align="center">
+  <b>Get Location</b><br><br>
+  <img 
+    src="images/get location.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
 </tr>
 </table>
 
@@ -98,10 +125,42 @@ This project was developed collaboratively by:
 
 <table>
 <tr>
-<td align="center"><b>Trips</b><br><br><img src="images/trips.png" width="250"/></td>
-<td align="center"><b>Extra Trip</b><br><br><img src="images/extra trip.png" width="250"/></td>
-<td align="center"><b>Pending Trip</b><br><br><img src="images/pending trip.png" width="250"/></td>
-<td align="center"><b>Cancel Trip</b><br><br><img src="images/cancel trip.png" width="250"/></td>
+<td align="center">
+  <b>Trips</b><br><br>
+  <img 
+    src="images/trips.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
+<td align="center">
+  <b>Extra Trip</b><br><br>
+  <img 
+    src="images/extra trip.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
+<td align="center">
+  <b>Pending Trip</b><br><br>
+  <img 
+    src="images/pending trip.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
+<td align="center">
+  <b>Cancel Trip</b><br><br>
+  <img 
+    src="images/cancel trip.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
 </tr>
 </table>
 
@@ -113,8 +172,24 @@ This project was developed collaboratively by:
 
 <table>
 <tr>
-<td align="center"><b>Profile</b><br><br><img src="images/profile.png" width="250"/></td>
-<td align="center"><b>Edit Profile</b><br><br><img src="images/edit profile.png" width="250"/></td>
+<td align="center">
+  <b>Profile</b><br><br>
+  <img 
+    src="images/profile.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
+<td align="center">
+  <b>Edit Profile</b><br><br>
+  <img 
+    src="images/edit profile.png"
+    height="480"
+    style="max-width:100%; object-fit:contain;"
+  />
+</td>
+
 </tr>
 </table>
 
