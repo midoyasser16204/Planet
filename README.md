@@ -8,9 +8,13 @@ The application follows **Clean Architecture**, a **feature-first structure**, a
 
 ## 📌 Project Description
 
-Planet allows users to authenticate, browse available trips, view trip details, manage bookings, track trip history, and update personal profiles. Trip locations and routes are visualized using **OpenStreetMap**, enhancing the user experience with interactive maps.
+Planet allows users to authenticate, browse available trips, view trip details, manage bookings, track trip history, and update personal profiles.
 
-The backend is built with **Laravel (PHP)** and exposes RESTful APIs for authentication, trip management, and user-related operations. To improve performance and reduce unnecessary API calls, the app implements a **local caching layer** using Hive.
+Trip locations and routes are visualized using **OpenStreetMap**, enhancing the user experience with interactive maps.
+
+The backend is built with **Laravel (PHP)** and exposes RESTful APIs for authentication, trip management, and user-related operations.
+
+To improve performance and reduce unnecessary API calls, the app implements a **local caching layer** using **Hive**.
 
 The project emphasizes:
 
@@ -54,29 +58,65 @@ This project was developed collaboratively by:
 
 ## 📸 Screenshots
 
-### 🔐 Authentication
+### Splash screen
 
-| Login                       | Register                       | OTP                       | Reset Password              |
-| --------------------------- | ------------------------------ | ------------------------- | --------------------------- |
-| ![](screens/auth/login.png) | ![](screens/auth/register.png) | ![](screens/auth/otp.png) | ![](screens/auth/reset.png) |
+<table>
+<tr>
+<td align="center"><b>First Splash</b><br><br><img src="images/first splash.png" width="250"/></td>
+<td align="center"><b>Second Splash</b><br><br><img src="images/second splash.png" width="250"/></td>
 
-### 🧳 Trip Features
+</tr>
+</table>
 
-| Trip List                   | Extra Trip                  | Cancel Trip                  |
-| --------------------------  | --------------------------- | ---------------------------- |
-| ![](screens/trip/list.png)  | ![](screens/trip/extra.png) | ![](screens/trip/cancel.png) |
+---
 
-### 👤 Profile
+###  Authentication
 
-| Profile                          | Update Profile                          |
-| -------------------------------- | --------------------------------------- |
-| ![](screens/profile/profile.png) | ![](screens/profile/update_profile.png) |
+<table>
+<tr>
+<td align="center"><b>Login</b><br><br><img src="images/login.png" width="250"/></td>
+<td align="center"><b>Register</b><br><br><img src="images/register.png" width="250"/></td>
+<td align="center"><b>Send Code</b><br><br><img src="images/send code.png" width="250"/></td>
+<td align="center"><b>Verify Code</b><br><br><img src="images/verify code.png" width="250"/></td>
+<td align="center"><b>Reset Password</b><br><br><img src="images/reset password.png" width="250"/></td>
+  
+</tr>
+</table>
 
-### 🕒 Trip History
+---
 
-| History                          |
-| -------------------------------- |
-| ![](screens/history/history.png) |
+<table>
+<tr>
+
+<td align="center"><b>Get Location</b><br><br><img src="images/get location.png" width="250"/></td>
+</tr>
+</table>
+
+---
+
+###  Trip Features
+
+<table>
+<tr>
+<td align="center"><b>Trips</b><br><br><img src="images/trips.png" width="250"/></td>
+<td align="center"><b>Extra Trip</b><br><br><img src="images/extra trip.png" width="250"/></td>
+<td align="center"><b>Pending Trip</b><br><br><img src="images/pending trip.png" width="250"/></td>
+<td align="center"><b>Cancel Trip</b><br><br><img src="images/cancel trip.png" width="250"/></td>
+</tr>
+</table>
+
+
+
+---
+
+###  Profile
+
+<table>
+<tr>
+<td align="center"><b>Profile</b><br><br><img src="images/profile.png" width="250"/></td>
+<td align="center"><b>Edit Profile</b><br><br><img src="images/edit profile.png" width="250"/></td>
+</tr>
+</table>
 
 ---
 
@@ -101,7 +141,7 @@ This project was developed collaboratively by:
 
 ---
 
-## 👤 Profile
+## 👤 Profile Features
 
 * View user information
 * Update profile details
@@ -114,19 +154,19 @@ This project was developed collaboratively by:
 
 ### 📱 Frontend (Mobile)
 
-* **Flutter** (Dart)
-* **State Management:** Bloc / Cubit
-* **Networking:** Dio
-* **Dependency Injection:** get_it / injectable
-* **Architecture:** Clean Architecture
-* **Maps:** OpenStreetMap (OSM)
+* Flutter (Dart)
+* State Management: Bloc / Cubit
+* Networking: Dio
+* Dependency Injection: get_it / injectable
+* Architecture: Clean Architecture
+* Maps: OpenStreetMap (OSM)
 
 ---
 
 ### 💾 Caching & Local Storage
 
-* **Hive** – Lightweight local database
-* **Custom Cache Layer**
+* Hive – Lightweight local database
+* Custom Cache Layer:
 
   * Cache user data
   * Cache trip data
@@ -137,16 +177,17 @@ This project was developed collaboratively by:
 
 ### 🖥 Backend
 
-* **PHP**
-* **Laravel Framework**
-* **RESTful APIs**
-* **Authentication & Authorization**
+* PHP
+* Laravel Framework
+* RESTful APIs
+* Authentication & Authorization
 
 ---
 
 ## 🧱 Architecture Overview
 
 The project follows a **Feature-Based Clean Architecture** approach.
+
 Each feature is isolated and divided into **Data**, **Domain**, and **Presentation** layers.
 
 ---
@@ -155,61 +196,54 @@ Each feature is isolated and divided into **Data**, **Domain**, and **Presentati
 
 ```
 feature_name/
-│
 ├── data/
-│   ├── datasources/        # Remote / local data sources
-│   ├── models/             # API & cache models
-│   ├── mappers/            # Model ↔ Entity conversion
-│   └── repositories/       # Repository implementations
-│
+│   ├── datasources/
+│   ├── models/
+│   ├── mappers/
+│   └── repositories/
 ├── domain/
-│   ├── entities/           # Business entities
-│   ├── repositories/       # Repository abstractions
-│   └── usecases/           # Business logic
-│
-├── presentation/
-│   ├── cubit/              # State management
-│   ├── screens/            # UI screens
-│   └── widgets/            # Feature widgets
+│   ├── entities/
+│   ├── repositories/
+│   └── usecases/
+└── presentation/
+    ├── cubit/
+    ├── screens/
+    └── widgets/
 ```
 
 ---
 
 ### 🔁 Layer Responsibilities
 
-#### 🗄 Data Layer
+**Data Layer**
 
 * Handles API requests and caching
 * Maps raw data into domain entities
 * Implements repository contracts
 
-#### 🧠 Domain Layer
+**Domain Layer**
 
 * Pure business logic
 * Independent from Flutter & external libraries
-* Contains use cases and entities
 
-#### 🎨 Presentation Layer
+**Presentation Layer**
 
 * UI & user interaction
 * State management using Cubit
-* Screens and reusable widgets
 
 ---
 
 ## 📂 Core Module
 
-The `core` module contains shared functionality across the app:
-
 ```
 core/
-├── cache/          # Local caching & logout handling
-├── di/             # Dependency injection setup
-├── constants/      # App-wide constants
-├── services/       # Shared services (API, helpers)
-├── utils/          # Utility functions
-├── theme/          # App theming
-└── widgets/        # Reusable UI components
+├── cache/
+├── di/
+├── constants/
+├── services/
+├── utils/
+├── theme/
+└── widgets/
 ```
 
 ---
@@ -218,7 +252,6 @@ core/
 
 ```
 lib/
-│
 ├── core/
 ├── features/
 │   ├── auth/
@@ -229,12 +262,10 @@ lib/
 │   ├── history/
 │   ├── profile/
 │   └── location/
-│
 └── main.dart
 ```
 
 ---
-
 
 ## 🚧 Future Enhancements
 
@@ -243,18 +274,17 @@ lib/
 * 🔔 Push notifications
 * 🌍 Multi-language support
 
-
 ---
 
 ## ⭐ Acknowledgment
 
- Thanks to all team members for their collaboration and effort in building this project.
+Thanks to all team members for their collaboration and effort in building this project.
 
-* Special thank to Youssef Salah For his Support 
-
-  GitHub: [https://github.com/YousefSalah1](https://github.com/YousefSalah1)
+Special thanks to **Youssef Salah** for his support
+GitHub: [https://github.com/YousefSalah1](https://github.com/YousefSalah1)
 
 If you find this project useful, please consider giving it a **star ⭐**.
+
 
 
 
