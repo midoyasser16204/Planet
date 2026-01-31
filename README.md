@@ -33,7 +33,7 @@ This project was developed collaboratively by:
   GitHub: [https://github.com/Marwan9Atef](https://github.com/Marwan9Atef)
 
 * **Mohamed Yasser** – Flutter Developer
-  GitHub: [https://github.com/midoyasser16204e](https://github.com/midoyasser16204e)
+  GitHub: [https://github.com/midoyasser16204e](https://github.com/midoyasser16204)
 
 * **Abdalla Ahmed** – Flutter Developer
   GitHub: [https://github.com/Abdalla-Ahmed-Aly](https://github.com/Abdalla-Ahmed-Aly)
