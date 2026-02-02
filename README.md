@@ -178,6 +178,21 @@ This project was developed collaboratively by:
        style="max-width:100%; object-fit:contain;" />
 </td>
 </tr>
+<tr>
+<td align="center">
+  <b>Complete Trip Details</b><br><br>
+  <img src="images/completed.png"
+       height="480"
+       style="max-width:100%; object-fit:contain;" />
+</td>
+
+<td align="center">
+  <b>Report</b><br><br>
+  <img src="images/report.png"
+       height="480"
+       style="max-width:100%; object-fit:contain;" />
+</td>
+</tr>
 
 </table>
 
